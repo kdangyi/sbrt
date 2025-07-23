@@ -9,107 +9,50 @@
 </head>
 <body>
   <header>
-    <h1>Sushi&bbbop</h1>
+    <h1><a href="index.html">Sushi & bbbop</a></h1>
+
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#Gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#location">location</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="location.html">location</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>저희 식당은 신선한 재료로 최고의 맛을 선사합니다.</p>
-  </section>
+  <div class="slider">
+    <div class="slides">
+      <img src="images/slide1.jpg" class="slide" alt="1번 이미지">
+      <img src="images/slide2.jpg" class="slide" alt="2번 이미지">
+      <img src="images/slide3.jpg" class="slide" alt="3번 이미지">
+    </div>
 
-  <section id="menu">
-    <h2>Menu</h2>
-    <h3>Appetizers & Maki(Roll)</h3>
-    <ul>
-      <li>비빔밥 - 9,000원</li>
-      <li>불고기 - 12,000원</li>
-      <li>된장찌개 - 8,000원</li>
-    </ul>
-    <h3>Korean Dishes</h3>
-    <ul>
-      <li>비빔밥 - 9,000원</li>
-      <li>불고기 - 12,000원</li>
-      <li>된장찌개 - 8,000원</li>
-    </ul>
-    <h3>Rice</h3>
-    <ul>
-      <li>비빔밥 - 9,000원</li>
-      <li>불고기 - 12,000원</li>
-      <li>된장찌개 - 8,000원</li>
-    </ul>
-    <h3>Stews or soups with rice</h3>
-    <ul>
-      <li>비빔밥 - 9,000원</li>
-      <li>불고기 - 12,000원</li>
-      <li>된장찌개 - 8,000원</li>
-    </ul>
-    <h3>Noodles</h3>
-    <ul>
-      <li>비빔밥 - 9,000원</li>
-      <li>불고기 - 12,000원</li>
-      <li>된장찌개 - 8,000원</li>
-    </ul>
-    <h3>Drinks</h3>
-    <ul>
-      <li>비빔밥 - 9,000원</li>
-      <li>불고기 - 12,000원</li>
-      <li>된장찌개 - 8,000원</li>
-    </ul>
-    <h3>Extra</h3>
-    <ul>
-      <li>비빔밥 - 9,000원</li>
-      <li>불고기 - 12,000원</li>
-      <li>된장찌개 - 8,000원</li>
-    </ul>
-  </section>
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
 
-  <section id="Gallery">
-    <h2>Gallery</h2>
-      <img src="img/food1.jpg" alt="대표 메뉴 1">
-      <img src="img/food2.jpg" alt="대표 메뉴 2">
-      <img src="img/interior.jpg" alt="식당 내부">
-  </section>
+    <div class="dots">
+    <span class="dot" onclick="goToSlide(0)"></span>
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+  </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Call: +1 647-557-3922</p>
-    <p>Address: Underground of ikea Entrance is aura shop, 384 Yonge St #57, Toronto, ON M5G 1S8</p>
-  </section>
-
-  <section id="location">
-    <h2>오시는 길</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.47024094957!2d-79.3830735!3d43.659189100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b565dcc10f%3A0xed5f5df102773d0b!2sSushi%20%26%20Bbbop!5e0!3m2!1sko!2sca!4v1753152442046!5m2!1sko!2sca" 
-        width="600" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=여기에_지도_링크_ID" 
-      width="35%" 
-      height="400" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </section>
-  
   <footer>
-    <p>&copy; 2025 맛있는 식당</p>
+     <div class="footer-content">
+    <p>📍 384 Yonge St #57, Toronto, ON</p>
+    <p>📞 Call : <a href="tel:6475573922">+1 647-557-3922</a></p>
+    <p>
+      📸 Instagram:
+      <a href="https://www.instagram.com/sushi_bbbop57?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+        @sushi_bbbop57
+      </a>
+    </p>
+  </div>
+    <p>&copy; Sushi & bbbop</p>
   </footer>
+
   <button id="topBtn" title="맨 위로">⬆</button>
   
   <script src="script.js" defer></script>

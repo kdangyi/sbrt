@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>맛있는 식당</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffefc;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff6347;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    form input, form button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+    }
+
+    blockquote {
+      background-color: #f9f9f9;
+      border-left: 5px solid #ff6347;
+      margin: 1rem 0;
+      padding: 1rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>맛있는 식당</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">소개</a></li>
+        <li><a href="#menu">메뉴</a></li>
+        <li><a href="#gallery">갤러리</a></li>
+        <li><a href="#reservation">예약</a></li>
+        <li><a href="#location">오시는 길</a></li>
+        <li><a href="#reviews">후기</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>식당 소개</h2>
+    <p>맛있는 식당은 신선한 재료와 정성으로 만드는 한식 전문점입니다. 편안한 분위기와 최고의 맛으로 고객 여러분을 기다리고 있습니다.</p>
+  </section>
+
+  <section id="menu">
+    <h2>메뉴</h2>
+    <ul>
+      <li>비빔밥 - 9,000원</li>
+      <li>불고기 - 12,000원</li>
+      <li>된장찌개 - 8,000원</li>
+      <li>김치찌개 - 8,000원</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>갤러리</h2>
+    <div class="gallery">
+      <img src="img/food1.jpg" alt="대표 메뉴 1">
+      <img src="img/food2.jpg" alt="대표 메뉴 2">
+      <img src="img/interior.jpg" alt="식당 내부">
+    </div>
+  </section>
+
+  <section id="reservation">
+    <h2>예약하기</h2>
+    <form>
+      <label for="name">이름</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="date">날짜</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">시간</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="people">인원수</label>
+      <input type="number" id="people" name="people" min="1" max="20" required>
+
+      <button type="submit">예약하기</button>
+    </form>
+  </section>
+
+  <section id="location">
+    <h2>오시는 길</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.836059725762!2d126.97865231530712!3d37.5665356797984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca28d5f3e0a2f%3A0xd87639d763d8c3a3!2z7ISc7Jq47Yq567OE7IucIOq0keydhOyLnCDquIjri6jri4jri6Qu!5e0!3m2!1sko!2skr!4v1626358464881!5m2!1sko!2skr"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <section id="reviews">
+    <h2>고객 후기</h2>
+    <blockquote>
+      "정말 맛있고 친절했어요! 다음에도 꼭 올게요." – 홍길동
+    </blockquote>
+    <blockquote>
+      "분위기가 너무 좋고 음식도 훌륭했습니다." – 이영희
+    </blockquote>
+  </section>
+
+  <section id="contact">
+    <h2>연락처 및 SNS</h2>
+    <p>📞 전화: 010-1234-5678</p>
+    <p>📍 주소: 서울시 맛동네 1길 23</p>
+    <p>📸 <a href="https://www.instagram.com/your_instagram" target="_blank">인스타그램</a></p>
+    <p>💬 <a href="https://pf.kakao.com/_your_kakao_id" target="_blank">카카오톡 채널</a></p>
+  </section>
+
+  <a href="tel:01012345678">010-1234-5678</a>
+  <a href="tel:01012345678" style="display:inline-block; padding:10px 20px; background-color:#28a745; color:white; text-decoration:none; border-radius:8px;">📞 전화 걸기</a>
+
+
+  <footer>
+    <p>&copy; 2025 맛있는 식당</p>
+  </footer>
+</body>
+</html>
