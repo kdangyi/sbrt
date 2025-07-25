@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sushi&bbbop</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sushi & bbbop</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1><a href="index.html">Sushi & bbbop</a></h1>
-
     <nav>
       <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="location.html">location</a></li>
+        <li><a href="location.html">Location</a></li>
       </ul>
     </nav>
   </header>
@@ -29,32 +27,33 @@
       <img src="images/양념치킨.jpg" class="slide" alt="3번 이미지">
     </div>
 
+    <!-- 버튼은 slider 내부에 있어야 위치가 붙어요 -->
     <button class="prev" onclick="prevSlide()">❮</button>
     <button class="next" onclick="nextSlide()">❯</button>
 
     <div class="dots">
-    <span class="dot" onclick="goToSlide(0)"></span>
-    <span class="dot" onclick="goToSlide(1)"></span>
-    <span class="dot" onclick="goToSlide(2)"></span>
+      <span class="dot" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
     </div>
   </div>
 
+
+  <!-- 인기 메뉴 영역
+  <section class="home-menu">
+    <h2>🍣 인기 메뉴</h2>
+    <ul>
+      <li>Squid Rings <span class="price">$5.49</span></li>
+      <li>Sushi Combo <span class="price">$16.99</span></li>
+    </ul>
+    <p><a href="menu.html">→ 전체 메뉴 보기</a></p>
+  </section> -->
+
   <footer>
-     <div class="footer-content">
-    <p>📍 384 Yonge St #57, Toronto, ON</p>
-    <p>📞 Call : <a href="tel:6475573922">+1 647-557-3922</a></p>
-    <p>
-      📸 Instagram:
-      <a href="https://www.instagram.com/sushi_bbbop57?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
-        @sushi_bbbop57
-      </a>
-    </p>
-  </div>
     <p>&copy; Sushi & bbbop</p>
   </footer>
 
   <button id="topBtn" title="맨 위로">⬆</button>
-  
   <script src="script.js" defer></script>
 </body>
 </html>
