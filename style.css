@@ -30,6 +30,14 @@ body::before {
   z-index: -1;
 }
 
+@media (max-width: 650px) {
+  body {
+    background-size: contain;  /* 전체 이미지 보이도록 */
+    background-attachment: scroll; /* 모바일에서 fixed는 버그 있을 수 있어 제거 */
+    background-position: top center;
+  }
+}
+
 /* 헤더 */
 header {
   background-color: #ff6347;
